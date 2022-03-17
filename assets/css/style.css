@@ -14,10 +14,10 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     font-weight: normal;
 }
 
-.main {
-    background-image: url("../images/background.png");
-    background-size: cover;
-}
+/*.main {*/
+/*    background-image: url("../images/background.png");*/
+/*    background-size: cover;*/
+/*}*/
 
 ol, ul {
     list-style: none;
@@ -28,9 +28,32 @@ img {
     height: auto;
 }
 
-.header {
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
     background-color: #002653;
-    height: 101px;
+    /*height: 100px;*/
+}
+
+.navbar-custom {
+    /*padding-top: 1rem;*/
+    /*padding-bottom: 1rem;;*/
+    background-color: #002653;
+}
+.navbar-custom .navbar-brand {
+    /*text-transform: uppercase;*/
+    /*font-size: 1rem;*/
+    /*letter-spacing: 0.1rem;*/
+    /*font-weight: 700;*/
+}
+.navbar-custom .navbar-nav .nav-item .nav-link {
+    /*text-transform: uppercase;*/
+    /*font-size: 0.8rem;*/
+    /*font-weight: 700;*/
+    /*letter-spacing: 0.1rem;*/
 }
 
 #logo {
@@ -49,6 +72,138 @@ img {
     padding-right: 0;
 }
 
+/*Full Width Video css*/
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+    header {
+        background: url('../images/video.png') black no-repeat center center scroll;
+    }
+
+    header video {
+        display: none;
+    }
+}
+/*Full Width Video CSS End*/
+
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: url("../images/Component 1 – 1.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.masthead h1, header.masthead .h1 {
+    font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+    header.masthead {
+        /*height: 100vh;*/
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+
+    header.masthead p {
+        font-size: 1.15rem;
+    }
+
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.masthead h1, header.masthead .h1 {
+        font-size: 3.5rem;
+    }
+}
+
 #footer {
     background-color: #001834;
+}
+
+.page-section {
+    padding: 8rem 0;
+}
+
+section {
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+
+.chronofitext {
+    color: #FDA31E;
+}
+
+figure {
+    position: relative
+}
+figcaption {
+    position: absolute;
+    /*width: 200px;*/
+    line-height: 150px;
+    text-align: center;
+    left: 150px;
+    top: -25px;
+    /*text-shadow: 0 0 1px white;*/
+    font-size: 24px;
+    /*font-weight:bold;*/
+}
+
+.full-width-image {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+.full-width-image img {
+    width: 100%;
 }
