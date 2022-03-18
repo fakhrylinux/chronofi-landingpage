@@ -5,25 +5,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>ChronoFi</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <title>ChronoFi</title>
 </head>
-<body>
+<body id="home">
 <!--Navigation-->
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top py-3 border-2 border-warning" id="mainNav">
-    <div class="container px-4 px-lg-5 d-flex justify-content-between">
-        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt=""></a>
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top border-2 border-warning mb-5" id="mainNav">
+    <div class="container-fluid px-xxl-5 d-flex justify-content-between">
+        <a class="navbar-brand ps-xxl-5" href="#"><img src="assets/images/logo.png" alt=""></a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon" style="font-size: 2rem"><i
                 class="bi bi-list"></i></span>
         </button>
 
-        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+        <div class="collapse navbar-collapse justify-content-end pe-xxl-5" id="navbarResponsive">
             <ul class="navbar-nav my-2 my-lg-0 ">
-                <li class="nav-item d-inline-flex justify-content-end"><a class="nav-link text-warning"
+                <li class="nav-item d-inline-flex justify-content-end"><a class="nav-link text-warning fw-bold"
                                                                           href="#home">Home</a></li>
                 <li class="nav-item d-inline-flex justify-content-end"><a class="nav-link text-white d-inline-flex"
                                                                           href="#gameplay">Gameplay</a></li>
@@ -39,75 +40,61 @@
 </nav>
 
 <!--Masthead-->
-<header class="masthead position-relative mt-5">
-    <!-- The HTML5 video element that will create the background video on the header -->
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <!--        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">-->
-        <source src="Apps%20with%20two%20Activity%20-%201%20March%202022.mp4" type="video/mp4">
+<header class="masthead position-relative">
+    <video class="mt-5" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
     </video>
 
-
-    <div class="align-items-end bottom-0 position-absolute bottom-0 start-0 mx-5 my-5">
-        <div>
-            <p class="text-white" style="font-family: MonoLisa,monospace">DIGITAL GAMING PLATFORM ON
-                BLOCKCHAIN</p>
+    <div class="align-items-end bottom-0 position-absolute bottom-0 start-0 ms-5 ps-xxl-5 mb-5">
+        <div class="mb-5">
+            <p class="text-white lh-1">DIGITAL GAMING<br/>PLATFORM ON BLOCKCHAIN</p>
         </div>
         <div>
             <img src="assets/images/button-playnow.png">
         </div>
-
-
     </div>
-
-
-    <!-- The header content -->
-    <!--    <div class="container h-100">-->
-    <!--        <div class="d-flex h-100 text-center align-items-center">-->
-    <!--            <div class="w-100 text-white">-->
-    <!--                <h1 class="display-3">Video Header</h1>-->
-    <!--                <p class="lead mb-0">Using HTML5 Video and Bootstrap</p>-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
-
-    <!--    <div class="container px-4 px-lg-5 h-100">-->
-    <!--        <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">-->
-    <!--            <div class="col-lg-8 align-self-end">-->
-    <!--                <p class="text-white" style="font-family: MonoLisa,monospace">DIGITAL GAMING PLATFORM ON BLOCKCHAIN</p>-->
-    <!--            </div>-->
-    <!--            <div class="col-lg-8 align-self-end">-->
-    <!--                <img class="d-flex align-items-end bottom-0 start-0"-->
-    <!--                     src="assets/images/button-playnow.png">-->
-    <!--            </div>-->
-    <!--        </div>-->
-    <!--    </div>-->
 </header>
 
 <!--About-->
 <section class="page-section" id="about">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">What is CHRONOFi</figcaption>
-                </figure>
+    <div class="container-fluid my-5">
+        <div class="text-center d-flex flex-column">
+            <div class="d-inline-flex justify-content-center">
+                <img class="mt-5 mb-5" src="assets/images/button-what-is-chronofi.png" width="601"
+                     height="110" alt="">
+            </div>
+            <div class="d-inline-flex justify-content-center">
+                <img id="teaser" class="my-5" src="assets/images/thumbnail_web%201.png" alt="">
+            </div>
+            <div class="d-inline-flex">
+                <div class="row justify-content-center">
+                    <div class="col-xxl-10">
+                        <p class="text-center text-white mt-2"><span class="chronofitext">CHRONOFi</span> is a
+                            blockchain-based
+                            NFT adventure game with a 2D turn-based and 3D MMORPG Play-to-Earn, where anyone can earn
+                            tokens
+                            through skilled gameplay and<br/> contributions to the ecosystem. Players can battle,
+                            collect,
+                            and build
+                            a robot. Allowing community developers to build their own tools and experiences in the <span
+                                    class="chronofitext">CHRONOFi</span>.<br/><br/>
 
-                <img class="mt-5" src="assets/images/thumbnail_web%201.png" alt="">
-                <p class="text-center text-white mt-2"><span class="chronofitext">CHRONOFi</span> is a blockchain-based
-                    NFT adventure game with a 2D turn-based and 3D MMORPG Play-to-Earn, where anyone can earn tokens
-                    through skilled gameplay and contributions to the ecosystem. Players can battle, collect, and build
-                    a robot. Allowing community developers to build their own tools and experiences in the <span
-                            class="chronofitext">CHRONOFi</span>.<br/><br/>
-
-                    While <span class="chronofitext">CHRONOFi</span> is a fun game, it's also taken on characteristics
-                    of a social network and jobs
-                    platform due to the strong community and play to earn opportunities that have come from its early
-                    success. Different from the existing competitors is Many of the NFT game released last year was a
-                    product of 'Tech' people. They have experience and knowledge in blockchain 'more' than they have in
-                    gaming. The result was mediocre games with very simple game play on 2D and we Inside 3D Game
-                    featuring open world games.
-                </p>
+                            While <span class="chronofitext">CHRONOFi</span> is a fun game, it's also taken on
+                            characteristics
+                            of a social network and jobs
+                            platform due to the strong community and play to earn opportunities that have come from its
+                            early
+                            success. Different from the existing competitors is Many of the NFT game released last year
+                            was
+                            a
+                            product of 'Tech' people. They have experience and knowledge in blockchain 'more' than they
+                            have
+                            in
+                            gaming. The result was mediocre games with very simple game play on 2D and we Inside 3D Game
+                            featuring open world games.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -117,69 +104,55 @@
 <section class="page-section" id="gameplay">
     <div class="container">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">Gameplay</figcaption>
-                </figure>
-                <div class="">
-                    <!--                    <img id="gameplay-img" class="img-fluid mw-100 h-auto mt-5" src="assets/images/example.png" alt="">-->
-                </div>
+            <div class="my-5 col-lg-8 text-center">
+                <img class="" src="assets/images/button-gameplay.png" width="601" height="110" alt="">
             </div>
         </div>
         <div class="full-width-image">
-            <img src="assets/images/example.png" alt="">
+            <img class="full-width-image" src="assets/images/example.png" alt="" style="width: 100%">
         </div>
-
     </div>
 </section>
 
 <!--Ecosystem-->
 <section class="page-section" id="ecosystem">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">Ecosystem</figcaption>
-                </figure>
-                <div class="full-width-image">
-                    <img src="assets/images/ecosystem.png" alt="">
-                </div>
-
+            <div class="my-5 col-lg-8 text-center">
+                <img class="" src="assets/images/button-ecosystem.png" width="601" height="110" alt="">
             </div>
         </div>
-
-
+        <div class="mx-5 text-center">
+            <img src="assets/images/ecosystem.png" alt="">
+        </div>
     </div>
 </section>
 
 <!--Game Features-->
 <section class="page-section" id="features">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">Game Features</figcaption>
-                </figure>
-                <div class="d-flex flex-row justify-content-center">
-                    <div class="mx-2 my-5 d-flex">
-                        <img src="assets/images/thumb-nft-marketplace.png" alt="">
-                    </div>
-                    <div class="mx-2 my-5 d-flex">
-                        <img src="assets/images/thumb-nft-staking.png" alt="">
-                    </div>
-                    <div class="mx-2 my-5 d-flex">
-                        <img src="assets/images/thumb-nft-adventure.png" alt="">
-                    </div>
-                    <div class="mx-2 my-5 d-flex">
-                        <img src="assets/images/thumb-mystery-box.png" alt="">
-                    </div>
-                    <div class="mx-2 my-5 d-flex">
-                        <img src="assets/images/thumb-battlefield.png" alt="">
-                    </div>
-                </div>
+            <div class="my-5 col-lg-8 text-center">
+                <img class="" src="assets/images/button-features.png" width="601" height="110" alt="">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/thumb-nft-marketplace.png" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/thumb-nft-marketplace.png" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/thumb-nft-marketplace.png" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/thumb-nft-marketplace.png" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/thumb-nft-marketplace.png" alt="">
             </div>
         </div>
     </div>
@@ -187,43 +160,33 @@
 
 <!--Roadmap-->
 <section class="page-section" id="roadmap">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">Roadmap</figcaption>
-                </figure>
-                <div class="">
-                    <img src="assets/images/roadmap.png" alt="">
-                </div>
-
+            <div class="my-5 col-lg-8 text-center">
+                <img class="" src="assets/images/button-roadmap.png" width="601" height="110" alt="">
             </div>
         </div>
-
-
+        <div class="text-center mb-5">
+            <img src="assets/images/roadmap.png" alt="">
+        </div>
     </div>
 </section>
 
 <!--Backer-->
 <section class="page-section" id="backer">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">Backer & Partnership</figcaption>
-                </figure>
-                <div class="">
-                    <div class="d-flex  justify-content-center">
-                        <div class="mt-5">
-                            <img src="assets/images/polygon.png" alt="">
-                        </div>
-                        <div class="mt-5">
-                            <img src="assets/images/astronaut.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="my-5 col-lg-8 text-center">
+                <img class="" src="assets/images/button-backer.png" width="601" height="110" alt="">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/polygon.png" alt="">
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/astronaut.png" alt="">
             </div>
         </div>
     </div>
@@ -232,51 +195,43 @@
 
 <!--Our Team-->
 <section class="page-section" id="ourteam">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-12 text-center">
-                <figure class="figure">
-                    <img class="" src="assets/images/button.png" width="601" height="110" alt="">
-                    <figcaption class="text-white">Backer & Partnership</figcaption>
-                </figure>
-                <div>
-                    <div class="d-flex justify-content-center row">
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-irvan.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-alfan.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-zummia.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-fatma.png" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center row">
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-taufik.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-fikri.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-tegar.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-jodhi.png" alt="">
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-center row">
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-rizki.png" alt="">
-                        </div>
-                        <div class="mt-5 col-3">
-                            <img src="assets/images/profile-fakhry.png" alt="">
-                        </div>
-                    </div>
-                </div>
+            <div class="my-5 col-lg-8 text-center">
+                <img class="" src="assets/images/button-ourteam.png" width="601" height="110" alt="">
+            </div>
+        </div>
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-irvan.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-alfan.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-zummia.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-fatma.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-taufik.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-fikri.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-tegar.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-jodhi.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-rizki.png" alt="">
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 text-center my-4">
+                <img class="img-fluid" src="assets/images/profile-fakhry.png" alt="">
             </div>
         </div>
     </div>
@@ -318,13 +273,15 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6 text-center">
                 <p class="fw-bold text-white">Join Our Community</p>
             </div>
         </div>
     </div>
 </footer>
 
-<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
 </html>

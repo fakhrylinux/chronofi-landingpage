@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 /*CSS Reset*/
 html {
     box-sizing: border-box;
@@ -6,6 +9,10 @@ html {
 
 *, *:before, *:after {
     box-sizing: inherit;
+}
+
+body {
+    background: url("../images/background.png");
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -18,6 +25,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /*    background-image: url("../images/background.png");*/
 /*    background-size: cover;*/
 /*}*/
+
+header.masthead {
+    padding-top: calc(6rem + 74px);
+    padding-bottom: 6rem;
+}
 
 ol, ul {
     list-style: none;
@@ -43,17 +55,24 @@ nav {
     /*padding-bottom: 1rem;;*/
     background-color: #002653;
 }
+
 .navbar-custom .navbar-brand {
     /*text-transform: uppercase;*/
     /*font-size: 1rem;*/
     /*letter-spacing: 0.1rem;*/
     /*font-weight: 700;*/
 }
+
 .navbar-custom .navbar-nav .nav-item .nav-link {
     /*text-transform: uppercase;*/
     /*font-size: 0.8rem;*/
     /*font-weight: 700;*/
     /*letter-spacing: 0.1rem;*/
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
 }
 
 #logo {
@@ -63,9 +82,9 @@ nav {
     float: left;
 }
 
-#about {
-    background-color: #0a53be;
-}
+/*#about {*/
+/*    background-color: #0a53be;*/
+/*}*/
 
 .no-padding {
     padding-left: 0;
@@ -113,6 +132,11 @@ header .overlay {
     z-index: 1;
 }
 
+header.masthead > div > div > p {
+    font-family: "Exton Free Trial", monospace;
+    font-size: 80px;
+}
+
 /* Media Query for devices withi coarse pointers and no hover functionality */
 
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
@@ -126,12 +150,13 @@ header .overlay {
         display: none;
     }
 }
+
 /*Full Width Video CSS End*/
 
 header.masthead {
     padding-top: 10rem;
     padding-bottom: calc(10rem - 4.5rem);
-    background: url("../images/Component 1 – 1.png");
+    /*background: url("../images/Component 1 – 1.png");*/
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -139,7 +164,7 @@ header.masthead {
 }
 
 header.masthead h1, header.masthead .h1 {
-    font-size: 2.25rem;
+    /*font-size: 2.25rem;*/
 }
 
 @media (min-width: 992px) {
@@ -169,13 +194,23 @@ header.masthead h1, header.masthead .h1 {
     background-color: #001834;
 }
 
-.page-section {
-    padding: 8rem 0;
+section.page-section {
+    padding-top: 90px;
 }
 
-section {
-    background-image: url("../images/background.png");
-    background-size: cover;
+section.page-section#about > div > div > div > p {
+    font-family: "Lato Black", sans-serif;
+    font-size: 20px;
+}
+
+/*section {*/
+/*    background-image: url("../images/background.png");*/
+/*    background-size: cover;*/
+/*}*/
+
+#teaser {
+    width: 1040px;
+    height: auto;
 }
 
 .chronofitext {
@@ -185,6 +220,7 @@ section {
 figure {
     position: relative
 }
+
 figcaption {
     position: absolute;
     /*width: 200px;*/
