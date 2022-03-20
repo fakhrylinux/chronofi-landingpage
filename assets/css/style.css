@@ -13,21 +13,19 @@ html {
 
 body {
     background: url("../images/background.png");
+    padding-top: 96px;
+    font-weight: normal;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
 }
 
-/*.main {*/
-/*    background-image: url("../images/background.png");*/
-/*    background-size: cover;*/
-/*}*/
-
 header.masthead {
-    padding-top: calc(6rem + 74px);
+    /*padding-top: calc(6rem + 74px);*/
+    /*padding-top: 160px;*/
     padding-bottom: 6rem;
 }
 
@@ -53,7 +51,7 @@ nav {
 .navbar-custom {
     /*padding-top: 1rem;*/
     /*padding-bottom: 1rem;;*/
-    background-color: #002653;
+    /*background-color: #002653;*/
 }
 
 .navbar-custom .navbar-brand {
@@ -81,10 +79,6 @@ nav {
     margin-bottom: 25px;
     float: left;
 }
-
-/*#about {*/
-/*    background-color: #0a53be;*/
-/*}*/
 
 .no-padding {
     padding-left: 0;
@@ -203,10 +197,83 @@ section.page-section#about > div > div > div > p {
     font-size: 20px;
 }
 
-/*section {*/
-/*    background-image: url("../images/background.png");*/
-/*    background-size: cover;*/
-/*}*/
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+section#features img.rotate {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: rotation;
+    transition: 1s;
+}
+
+section#features img.icon-feature {
+    top: 46px;
+}
+
+section#features div.inner {
+    top: 0;
+}
+
+section#features div.inner img {
+    top: -50%;
+}
+
+section#features img.text-box {
+    /*width: 315px;*/
+    /*height: 325px;*/
+    /*object-fit: none;*/
+}
+
+section#features div img.spin {
+    animation: spin 0.75s infinite linear;
+}
+
+.spin::before,
+.spin::after {
+    left: -2px;
+    top: -2px;
+    display: none;
+    position: absolute;
+    content: '';
+    width: inherit;
+    height: inherit;
+    border: inherit;
+    border-radius: inherit;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner,
+.spinner::before,
+.spinner::after {
+    display: inline-block;
+    border-color: transparent;
+    border-top-color: red;
+    animation-duration: 1.2s;
+}
+
+.spinner::before {
+    transform: rotate(120deg);
+}
+
+.spinner::after {
+    transform: rotate(240deg);
+}
+
 
 #teaser {
     width: 1040px;
