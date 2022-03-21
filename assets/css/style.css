@@ -5,6 +5,7 @@
 html {
     box-sizing: border-box;
     font-size: 16px;
+    height: 100%;
 }
 
 *, *:before, *:after {
@@ -13,8 +14,9 @@ html {
 
 body {
     background: url("../images/background.png");
-    padding-top: 96px;
+    /*padding-top: 300px;*/
     font-weight: normal;
+    height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -26,7 +28,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul {
 header.masthead {
     /*padding-top: calc(6rem + 74px);*/
     /*padding-top: 160px;*/
-    padding-bottom: 6rem;
+    /*padding-bottom: 6rem;*/
 }
 
 ol, ul {
@@ -46,26 +48,6 @@ nav {
     list-style: none;
     background-color: #002653;
     /*height: 100px;*/
-}
-
-.navbar-custom {
-    /*padding-top: 1rem;*/
-    /*padding-bottom: 1rem;;*/
-    /*background-color: #002653;*/
-}
-
-.navbar-custom .navbar-brand {
-    /*text-transform: uppercase;*/
-    /*font-size: 1rem;*/
-    /*letter-spacing: 0.1rem;*/
-    /*font-weight: 700;*/
-}
-
-.navbar-custom .navbar-nav .nav-item .nav-link {
-    /*text-transform: uppercase;*/
-    /*font-size: 0.8rem;*/
-    /*font-weight: 700;*/
-    /*letter-spacing: 0.1rem;*/
 }
 
 .nav-link {
@@ -89,20 +71,23 @@ nav {
 header {
     position: relative;
     background-color: black;
-    height: 75vh;
-    min-height: 25rem;
+    /*height: 75vh;*/
+    /*min-height: 25rem;*/
     width: 100%;
     overflow: hidden;
 }
 
 header video {
+    object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    /*min-width: 100%;*/
+    /*min-height: 100%;*/
+    /*width: auto;*/
+    /*height: auto;*/
+    width: 100vw;
+    height: 100vh;
     z-index: 0;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -148,8 +133,8 @@ header.masthead > div > div > p {
 /*Full Width Video CSS End*/
 
 header.masthead {
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 4.5rem);
+    /*padding-top: 10rem;*/
+    /*padding-bottom: calc(10rem - 4.5rem);*/
     /*background: url("../images/Component 1 – 1.png");*/
     background-position: center;
     background-repeat: no-repeat;
@@ -262,7 +247,6 @@ section#features div img.spin {
 .spinner::after {
     display: inline-block;
     border-color: transparent;
-    border-top-color: red;
     animation-duration: 1.2s;
 }
 
