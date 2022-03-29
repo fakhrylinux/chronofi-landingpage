@@ -300,3 +300,16 @@ figcaption {
 .full-width-image img {
     width: 100%;
 }
+
+.copyright {
+    width: 100%;
+    background-color: black;
+    height: 71px;
+
+}
+
+.copyright p {
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-size: 20px;
+}
