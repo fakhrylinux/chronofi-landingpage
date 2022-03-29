@@ -305,6 +305,21 @@ figcaption {
     width: 100%;
 }
 
+section#faq p.faq-title {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 36px;
+}
+
+section#faq p.faq-subtitle {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+}
+
+section#faq p.faq-content {
+    font-family: Montserrat, sans-serif;
+}
+
+
 #smart-contract-address {
     background-color: #001F44;
 }
