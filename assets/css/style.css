@@ -305,6 +305,19 @@ figcaption {
     width: 100%;
 }
 
+#smart-contract-address {
+    background-color: #001F44;
+}
+
+#smart-contract-address div.container-fluid {
+    height: 69px;
+}
+
+#smart-contract-address  p {
+    font-family: Montserrat, sans-serif;
+    color: white;
+}
+
 .copyright {
     width: 100%;
     background-color: black;
