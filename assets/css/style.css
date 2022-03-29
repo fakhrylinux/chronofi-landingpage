@@ -175,6 +175,10 @@ header.masthead h1, header.masthead .h1 {
     background-color: #001834;
 }
 
+#footer p {
+    font-family: Montserrat, sans-serif;
+}
+
 section.page-section {
     padding-top: 90px;
 }
