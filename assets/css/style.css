@@ -26,7 +26,6 @@ h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 
-
 ol, ul {
     list-style: none;
 }
@@ -61,6 +60,12 @@ nav {
 .no-padding {
     padding-left: 0;
     padding-right: 0;
+}
+
+.button-section {
+    width: 331px;
+    height: auto;
+    align-self: center;
 }
 
 header.masthead {
@@ -120,7 +125,6 @@ header .overlay {
 }
 
 
-
 header.masthead > div > div > p {
     font-family: "Exton Free Trial", monospace;
     font-size: 80px;
@@ -173,34 +177,26 @@ header.masthead h1, header.masthead .h1 {
     }
 }
 
-#footer {
-    background-color: #001834;
-}
-
-#footer p {
-    font-family: Montserrat, sans-serif;
-}
-
-section.page-section {
-    padding-top: 90px;
-}
+/*section.page-section {*/
+/*    padding-top: 90px;*/
+/*}*/
 
 section.page-section#about {
     background-image: url("../images/why-chronofi-background.png");
     background-size: cover;
 }
 
-section.page-section#about  p#what-is {
+section.page-section#about p#what-is {
     font-family: "Lato Black", sans-serif;
     font-size: 18px;
 }
 
-section.page-section#about  p.why-chronofi {
+section.page-section#about p.why-chronofi {
     font-family: "Lato Black", sans-serif;
     font-size: 18px;
 }
 
-section.page-section#about  p {
+section.page-section#about p {
     font-family: "Lato Black", sans-serif;
     font-size: 20px;
 }
@@ -214,13 +210,6 @@ section.page-section#ecosystem {
     background-size: cover;
 }
 
-.carousel-cell {
-    width: 300px;
-    margin-right: 10px;
-    counter-increment: carousel-cell;
-}
-
-
 @keyframes rotation {
     0% {
         transform: rotate(0deg);
@@ -229,6 +218,7 @@ section.page-section#ecosystem {
         transform: rotate(360deg);
     }
 }
+
 
 section#features img.rotate {
     animation-duration: 10s;
@@ -323,6 +313,14 @@ figcaption {
     /*font-weight:bold;*/
 }
 
+.container-image {
+    border: solid red 2px;
+    width: 1090px;
+    height: auto;
+    align-self: center;
+    place-content: center;
+}
+
 .full-width-image {
     width: 100vw;
     position: relative;
@@ -332,6 +330,11 @@ figcaption {
 
 .full-width-image img {
     width: 100%;
+}
+
+section#faq {
+    background-image: url("../images/faq-bg.png");
+    background-size: cover;
 }
 
 section#faq p.faq-title {
@@ -344,10 +347,41 @@ section#faq p.faq-subtitle {
     font-size: 20px;
 }
 
+section#faq h2.faq-subtitle {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+}
+
+/*section#faq h2.faq-subtitle span:after {*/
+/*    content: '';*/
+/*    display: inline-block;*/
+/*    !*position: relative;*!*/
+/*    border-top: .3rem solid white;*/
+/*    width: 100%;*/
+/*    !*height: 4px;*!*/
+/*    !*background: white;*!*/
+/*    transform: translate(-1rem);*/
+/*    !*top: 100%;*!*/
+/*    !*left: 0;*!*/
+/*}*/
+
+
 section#faq p.faq-content {
     font-family: Montserrat, sans-serif;
 }
 
+section#faq div.faq-content {
+    font-family: Montserrat, sans-serif;
+}
+
+
+.accordion-button:not(.collapsed):after {
+    background-image: url("../images/accordion-minus-btn.svg");
+}
+
+.accordion-button.collapsed:after {
+    background-image: url("../images/accordion-plus-btn.svg");
+}
 
 #smart-contract-address {
     background-color: #001F44;
@@ -357,8 +391,39 @@ section#faq p.faq-content {
     height: 69px;
 }
 
-#smart-contract-address  p {
+#smart-contract-address p {
     font-family: Montserrat, sans-serif;
+    color: white;
+}
+
+footer#footer {
+    background-color: #001834;
+}
+
+#footer p {
+    font-family: Montserrat, sans-serif;
+}
+
+footer div.coming-soon {
+    background-color: #002550;
+}
+
+footer div.coming-soon p.coming-soon-title {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+footer div.coming-soon p.coming-soon-content {
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 12px;
+    color: white;
+}
+
+footer div.coming-soon div#invest {
+    background-color: #001834;
+    font-family: "Voice Activated BB", sans-serif;
+    font-size: 12px;
     color: white;
 }
 
@@ -366,7 +431,6 @@ section#faq p.faq-content {
     width: 100%;
     background-color: black;
     height: 71px;
-
 }
 
 .copyright p {
