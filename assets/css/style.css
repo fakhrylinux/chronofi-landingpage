@@ -25,11 +25,7 @@ h1, h2, h3, h4, h5, h6, p, ol, ul {
     font-weight: normal;
 }
 
-header.masthead {
-    /*padding-top: calc(6rem + 74px);*/
-    /*padding-top: 160px;*/
-    /*padding-bottom: 6rem;*/
-}
+
 
 ol, ul {
     list-style: none;
@@ -67,55 +63,71 @@ nav {
     padding-right: 0;
 }
 
-/*Full Width Video css*/
-header {
+header.masthead {
     position: relative;
-    background-color: black;
-    /*height: 75vh;*/
-    /*min-height: 25rem;*/
+    /*top: 95px;*/
+    z-index: -1;
     width: 100%;
-    overflow: hidden;
+    /*height: 100vh;*/
+    /*padding-top: 10rem;*/
+    /*padding-top: 10px;*/
+    /*padding-bottom: calc(10rem - 4.5rem);*/
+    /*background: url("../images/Component 1 – 1.png");*/
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-attachment: scroll;*/
+    background-size: cover;
 }
 
 header video {
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /*min-width: 100%;*/
-    /*min-height: 100%;*/
-    /*width: auto;*/
-    /*height: auto;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
+    /*object-fit: cover;*/
+    /*position: absolute;*/
+    /*top: 20em;*/
+    /*left: 50%;*/
+    min-width: 100%;
+    /*min-height: 100vh;*/
     width: 100%;
     height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*width: 100vw;*/
+    /*height: 100vh;*/
+    /*width: 100%;*/
+    /*height: auto;*/
+    /*z-index: 0;*/
+    /*-ms-transform: translateX(-50%) translateY(-50%);*/
+    /*-moz-transform: translateX(-50%) translateY(-50%);*/
+    /*-webkit-transform: translateX(-50%) translateY(-50%);*/
+    /*transform: translateX(-50%) translateY(-50%);*/
 }
 
-header .container {
-    position: relative;
-    z-index: 2;
-}
+/*header .container {*/
+/*    position: relative;*/
+/*    z-index: 2;*/
+/*}*/
 
 header .overlay {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
+    background-color: rgba(8, 27, 11, 0.3);
+    z-index: 2;
+    /*opacity: 0.5;*/
+    /*z-index: 1;*/
 }
+
+
 
 header.masthead > div > div > p {
     font-family: "Exton Free Trial", monospace;
     font-size: 80px;
+}
+
+header.masthead h1, header.masthead .h1 {
+    /*font-size: 2.25rem;*/
 }
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
@@ -124,25 +136,15 @@ header.masthead > div > div > p {
 
 @media (pointer: coarse) and (hover: none) {
     header {
-        background: url('../images/video.png') black no-repeat center center scroll;
+        /*background: url('../images/video.png') black no-repeat center center scroll;*/
     }
 
     header video {
-        display: none;
+        /*display: none;*/
     }
 }
 
 /*Full Width Video CSS End*/
-
-header.masthead {
-    /*padding-top: 10rem;*/
-    /*padding-bottom: calc(10rem - 4.5rem);*/
-    /*background: url("../images/Component 1 – 1.png");*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
 
 header.masthead h1, header.masthead .h1 {
     /*font-size: 2.25rem;*/
@@ -150,7 +152,7 @@ header.masthead h1, header.masthead .h1 {
 
 @media (min-width: 992px) {
     header.masthead {
-        /*height: 100vh;*/
+        height: 100vh;
         min-height: 40rem;
         padding-top: 4.5rem;
         padding-bottom: 0;
@@ -183,7 +185,22 @@ section.page-section {
     padding-top: 90px;
 }
 
-section.page-section#about > div > div > div > p {
+section.page-section#about {
+    background-image: url("../images/why-chronofi-background.png");
+    background-size: cover;
+}
+
+section.page-section#about  p#what-is {
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+}
+
+section.page-section#about  p.why-chronofi {
+    font-family: "Lato Black", sans-serif;
+    font-size: 18px;
+}
+
+section.page-section#about  p {
     font-family: "Lato Black", sans-serif;
     font-size: 20px;
 }
@@ -191,6 +208,18 @@ section.page-section#about > div > div > div > p {
 section.page-section#about iframe {
     border: 0;
 }
+
+section.page-section#ecosystem {
+    background-image: url("../images/ecosystem-background.png");
+    background-size: cover;
+}
+
+.carousel-cell {
+    width: 300px;
+    margin-right: 10px;
+    counter-increment: carousel-cell;
+}
+
 
 @keyframes rotation {
     0% {
