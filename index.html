@@ -13,7 +13,7 @@
 </head>
 <body id="home">
 <!--Navigation-->
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top border-2 border-warning mb-5" id="mainNav">
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top border-2 border-warning mb-5" id="navbar">
     <div class="container-fluid px-xxl-5 d-flex justify-content-between">
         <a class="navbar-brand ps-xxl-5" href="#"><img src="assets/images/logo.png" alt=""></a>
         <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
@@ -43,9 +43,9 @@
 </nav>
 
 <!--Masthead-->
-<header class="masthead mb-5">
+<header class="masthead">
     <div class="">
-        <video class="mt-5" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
             <source src="assets/video/chronofi.mp4" type="video/mp4">
         </video>
     </div>
@@ -54,14 +54,14 @@
             <p class="text-white lh-1">DIGITAL GAMING<br/>PLATFORM ON BLOCKCHAIN</p>
         </div>
         <div>
-            <img src="assets/images/button-playnow.png">
+            <img src="assets/images/playnow-btn.png">
         </div>
     </div>
 </header>
 
 <!--About-->
 <section class="page-section" id="about">
-    <div class="container my-5 about">
+    <div class="container mb-5 about">
         <div class="text-center d-flex flex-column">
             <div class="d-flex justify-content-center mt-2 button-section" >
                 <img class="mt-5 mb-5" src="assets/images/button-what-is-chronofi.png" alt="">
@@ -98,23 +98,23 @@
                 <div class="d-flex justify-content-center button-section">
                     <img class="mt-5 mb-5" src="assets/images/button-why.png"/>
                 </div>
-                <div class="row my-5">
-                    <div class="col-6">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
                             <div class="col-2 d-flex align-items-center">
-                                <img class="d-block" src="assets/images/2d3d-icon.png">
+                                <img src="assets/images/why/a.png" alt="">
                             </div>
                             <div class="col-10">
-                                <p class="text-start text-white why-chronofi">We will have two kinds of games:
+                                <p class="text-start text-white why-chronofi">
+                                    We will have two kinds of games:
                                     2D turn-based games and 3D MMORPGs and Metaverse NFT Marketplace.</p>
                             </div>
                         </div>
-
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
                             <div class="col-2 d-flex align-items-center">
-                                <img class="d-block" src="assets/images/innovative-icon.png">
+                                <img src="assets/images/why/b.png">
                             </div>
                             <div class="col-10">
                                 <p class="text-start text-white why-chronofi">
@@ -126,11 +126,11 @@
                     </div>
                 </div>
 
-                <div class="row my-5">
-                    <div class="col-6">
+                <div class="row">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
                             <div class="col-2 d-flex align-items-center">
-                                <img class="d-block" src="assets/images/personal-icon.png">
+                                <img src="assets/images/why/c.png">
                             </div>
                             <div class="col-10">
                                 <p class="text-start text-white why-chronofi">
@@ -141,10 +141,10 @@
                         </div>
 
                     </div>
-                    <div class="col-6">
+                    <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
                             <div class="col-2 d-flex align-items-center">
-                                <img class="d-block" src="assets/images/ability-icon.png">
+                                <img src="assets/images/why/d.png" alt="">
                             </div>
                             <div class="col-10">
                                 <p class="text-start text-white why-chronofi">
@@ -162,15 +162,46 @@
 
 <!--Gameplay-->
 <section class="page-section" id="gameplay">
-    <div class="container preloadSection">
+    <div class="container-fluid preloadSection">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="my-5 col-lg-8 text-center button-section">
                 <img class="" src="assets/images/button-gameplay.png" alt="">
             </div>
         </div>
-        <div class="full-width-image deferredImageContainer">
-            <img class="full-width-image lazy" src="assets/images/example.png"
-                 data-src="assets/images/example.png" alt="">
+
+        <div class="main-carousel" data-flickity='{ "wrapAround": true}'>
+            <div class="carousel-cell text-center" style="width: 58em; height: auto">
+                <img src="assets/images/gameplay/gamepvp.png" class="vw-100" style="height: auto">
+                <div class="text-white my-5">
+                    <p style="font-family: Poppins,sans-serif; font-size: 2rem">
+                        Game PvP
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-cell text-center"  style="width: 58em; height: auto">
+                <img src="assets/images/gameplay/inventory.png" class="vw-100" style="height: auto">
+                <div class="text-white my-5">
+                    <p style="font-family: Poppins,sans-serif; font-size: 2rem">
+                        Inventory
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-cell text-center" style="width: 58em; height: auto">
+                <img src="assets/images/gameplay/shop.png" class="vw-100" style="height: auto">
+                <div class="text-white my-5">
+                    <p style="font-family: Poppins,sans-serif; font-size: 2rem">
+                        Shop
+                    </p>
+                </div>
+            </div>
+            <div class="carousel-cell text-center" style="width: 58em; height: auto">
+                <img src="assets/images/gameplay/upgradecharacter.png" class="vw-100" style="height: auto">
+                <div class="text-white my-5">
+                    <p style="font-family: Poppins,sans-serif; font-size: 2rem">
+                        Upgrade Character
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -183,8 +214,8 @@
                 <img class="" src="assets/images/button-ecosystem.png" alt="">
             </div>
         </div>
-        <div class="mx-5 text-center deferredImageContainer">
-            <img class="lazy" src="assets/images/ecosystem.png">
+        <div class="text-center deferredImageContainer w-100">
+            <img class="lazy border" src="assets/images/ecosystem.png">
         </div>
     </div>
 
@@ -225,12 +256,13 @@
 <section class="page-section" id="roadmap">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="my-5 col-lg-8 text-center button-section">
+            <div class=" col-lg-8 text-center button-section">
                 <img class="" src="assets/images/button-roadmap.png" alt="">
             </div>
         </div>
         <div class="text-center mb-5 deferredImageContainer">
-            <img class="lazy" src="assets/images/roadmap.png">
+<!--            <img class="lazy" src="assets/images/roadmap.png">-->
+            <object class="w-100" data="assets/images/svg/roadmap-svg.svg" type="image/svg+xml"></object>
         </div>
     </div>
 </section>
@@ -238,8 +270,8 @@
 <!--Backer-->
 <section class="page-section" id="backer" style="background-color: #000f21">
     <div class="container py-5">
-        <div class="row my-5 gx-4 gx-lg-5 justify-content-center">
-            <div class="mb-5 col-lg-8 text-center button-section">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class=" col-lg-8 text-center button-section">
                 <img class="" src="assets/images/button-backer.png" alt="">
             </div>
         </div>
@@ -909,5 +941,17 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+
+      document.getElementById("navbar").style.background = "#002653";
+    } else {
+
+      document.getElementById("navbar").style.background = "none";
+    }
+  }
+</script>
 </body>
 </html>
