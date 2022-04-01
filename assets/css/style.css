@@ -10,6 +10,10 @@ html {
 
 }
 
+* {
+    max-width: 100%;
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -38,6 +42,7 @@ ol, ul {
 }
 
 img {
+    /*width: 100vw;*/
     max-width: 100%;
     height: auto;
 }
@@ -45,6 +50,7 @@ img {
 @media (min-width: 900px) {
     html {
         font-size: 18px;
+        max-width: 100%;
     }
 
     header.masthead {
@@ -66,6 +72,7 @@ img {
 @media (min-width: 1200px) {
     html {
         font-size: 20px;
+        max-width: 100%;
         /*width: 100%;*/
         /*height: 100%;*/
         /*margin: 0;*/
@@ -91,6 +98,7 @@ nav {
     font-size: 1.5rem;
 }
 
+
 #logo {
     margin-top: 25px;
     margin-left: 140px;
@@ -112,7 +120,8 @@ nav {
 header.masthead {
     position: relative;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     /*top: 95px;*/
     /*z-index: -1;*/
@@ -203,6 +212,11 @@ header.masthead h1, header.masthead .h1 {
 /*section.page-section {*/
 /*    padding-top: 90px;*/
 /*}*/
+
+section.page-section {
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
+}
 
 section.page-section#about {
     background-image: url("../images/why-chronofi-background.png");
@@ -374,6 +388,13 @@ section#gameplay .flickity-prev-next-button {
 /*    right: 10px;*/
 /*}*/
 
+section#team-carousel div.carousel-cell {
+    width: 12.5em;
+}
+
+section#advisor div.advisor {
+    width: 12.5em;
+}
 
 section#faq {
     background-image: url("../images/faq-bg.png");
@@ -439,12 +460,21 @@ section#faq div.faq-content {
     color: white;
 }
 
+footer#footer div.container-fluid {
+    max-width: 80em;
+}
+
+footer#footer div.logo {
+    width: 16em;
+}
+
 footer#footer {
     background-color: #001834;
 }
 
 #footer p {
     font-family: Montserrat, sans-serif;
+    font-size: 0.7rem;
 }
 
 footer div.coming-soon {
@@ -471,7 +501,8 @@ footer div.coming-soon div#invest {
 }
 
 .copyright {
-    width: 100%;
+    /*width: 100vw;*/
+    /*max-width: 100%;*/
     background-color: black;
     height: 71px;
 }
