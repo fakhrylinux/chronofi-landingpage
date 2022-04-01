@@ -388,6 +388,24 @@ section#gameplay .flickity-prev-next-button {
 /*    right: 10px;*/
 /*}*/
 
+.flickity-button {
+    /*display: none;*/
+    /*background: rgba(0);*/
+}
+/* big previous & next buttons */
+.flickity-prev-next-button {
+    width: 100px;
+    height: 100px;
+}
+/* icon color */
+.flickity-button-icon {
+    fill: transparent;
+}
+
+button.flickity-prev-next-button.previous{
+    /*background-image: url("../images/arrow-left.svg");*/
+}
+
 section#team-carousel div.carousel-cell {
     width: 12.5em;
 }
