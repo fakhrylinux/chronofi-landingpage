@@ -8,7 +8,7 @@ html {
     font-size: 16px;
     height: 100%;
     /*scroll-padding-top: calc(4.5rem - 1px);*/
-
+    overflow-x: hidden;
 }
 
 * {
@@ -20,6 +20,7 @@ html {
 }
 
 body {
+    /*position: relative;*/
     background: url("../images/background.png");
     /*padding-top: 300px;*/
     font-weight: normal;
@@ -29,6 +30,7 @@ body {
     padding: 0;
     /*padding-right: 0;*/
     /*padding-left: 0;*/
+    /*overflow-x: hidden;*/
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -223,8 +225,12 @@ section.page-section {
     /*max-width: 100%;*/
 }
 
+section#about div.container {
+    max-width: 1560px;
+}
+
 section.page-section#about {
-    background-image: url("../images/why-chronofi-background.png");
+    background-image: url("../images/why-chronofi-background-fix1.png");
     background-size: cover;
 }
 
