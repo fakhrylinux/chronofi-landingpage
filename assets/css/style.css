@@ -102,13 +102,6 @@ nav {
 }
 
 
-#logo {
-    margin-top: 25px;
-    margin-left: 140px;
-    margin-bottom: 25px;
-    float: left;
-}
-
 .no-padding {
     padding-left: 0;
     padding-right: 0;
@@ -493,8 +486,15 @@ footer#footer div.container-fluid {
     max-width: 80em;
 }
 
+#logo {
+    margin-top: 25px;
+    margin-left: 140px;
+    margin-bottom: 25px;
+    float: left;
+}
+
 footer#footer div.logo {
-    width: 16em;
+    width: 20.5em;
 }
 
 footer#footer {
@@ -503,7 +503,7 @@ footer#footer {
 
 #footer p {
     font-family: Montserrat, sans-serif;
-    font-size: 0.7rem;
+    font-size: 0.875rem;
 }
 
 footer div.coming-soon {
