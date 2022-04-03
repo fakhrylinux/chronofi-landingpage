@@ -20,17 +20,12 @@ html {
 }
 
 body {
-    /*position: relative;*/
     background: url("../images/background.png");
-    /*padding-top: 300px;*/
+    background-size: cover;
     font-weight: normal;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-    /*padding-right: 0;*/
-    /*padding-left: 0;*/
-    /*overflow-x: hidden;*/
 }
 
 h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -50,42 +45,6 @@ img {
     height: auto;
 }
 
-/*@media (min-width: 900px) {*/
-/*    html {*/
-/*        font-size: 18px;*/
-/*        max-width: 100%;*/
-/*    }*/
-
-/*    header.masthead {*/
-/*        height: 100vh;*/
-/*        min-height: 40rem;*/
-/*        padding-top: 4.5rem;*/
-/*        padding-bottom: 0;*/
-/*    }*/
-
-/*    header.masthead p {*/
-/*        font-size: 1.15rem;*/
-/*    }*/
-
-/*    header.masthead h1, header.masthead .h1 {*/
-/*        font-size: 3rem;*/
-/*    }*/
-/*}*/
-
-/*@media (min-width: 1200px) {*/
-/*    html {*/
-/*        font-size: 20px;*/
-/*        max-width: 100%;*/
-/*        !*width: 100%;*!*/
-/*        !*height: 100%;*!*/
-/*        !*margin: 0;*!*/
-/*    }*/
-
-/*    header.masthead h1, header.masthead .h1 {*/
-/*        font-size: 3.5rem;*/
-/*    }*/
-/*}*/
-
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -93,12 +52,119 @@ nav {
     margin-bottom: 0;
     list-style: none;
     background-color: #002653;
-    /*height: 100px;*/
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 163, 30)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    color: yellow;
+}
+
+.navbar-toggler {
+    /*border-color: rgb(255,102,203);*/
+    border-color: transparent;
+    /*color: #FDA31E;*/
 }
 
 .nav-link {
     font-family: "Montserrat", sans-serif;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 575px) {
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header video {
+        /*object-fit: cover;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*bottom: 0;*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        /*font-size: 4rem;*/
+        font-size: 150%;
+    }
+
+    header.masthead .header-title {
+        top: 22rem;
+        /*left: 1rem;*/
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header #playnow {
+        width: 8em;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        font-size: 4rem;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header video {
+        /*object-fit: cover;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /*bottom: 0;*/
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    header.masthead .header-title {
+        /*top: 22rem;*/
+        top: 40%;
+        /*left: 1rem;*/
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header #playnow {
+        width: 16em;
+    }
 }
 
 
@@ -113,54 +179,50 @@ nav {
     align-self: center;
 }
 
-header.masthead {
-    position: relative;
-    overflow: hidden;
-    width: 100vw;
-    max-width: 100%;
-    height: 100vh;
-    /*top: 95px;*/
-    /*z-index: -1;*/
-    /*width: 100%;*/
-    /*height: 100vh;*/
-    /*padding-top: 10rem;*/
-    /*padding-top: 10px;*/
-    /*padding-bottom: calc(10rem - 4.5rem);*/
-    /*background: url("../images/Component 1 – 1.png");*/
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: scroll;*/
-    /*background-size: cover;*/
+@media screen and (min-width: 992px) {
+    header.masthead > div > div > p {
+        font-family: "Exton Free Trial", monospace;
+        font-size: 5rem;
+    }
 
+    header.masthead {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    header.masthead .header-title {
+        bottom: 4rem;
+        /*left: 1rem;*/
+        left: 4rem;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header #playnow {
+        width: 19em;
+    }
+
+    header video {
+        /*object-fit: cover;*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
 }
-
-header video {
-    /*object-fit: cover;*/
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*width: 100vw;*/
-    /*height: 100vh;*/
-    /*width: 100%;*/
-    /*height: auto;*/
-    /*z-index: 0;*/
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-}
-
-/*header .container {*/
-/*    position: relative;*/
-/*    z-index: 2;*/
-/*}*/
 
 header .overlay {
     position: absolute;
@@ -176,21 +238,11 @@ header .overlay {
 
 
 header.masthead > div > div > p {
-    font-family: "Exton Free Trial", monospace;
-    font-size: 3.75rem;
+    /*font-family: "Exton Free Trial", monospace;*/
+    /*font-size: 3.75rem;*/
     /*font-size: 4.5vw;*/
 }
 
-@media screen and (max-width: 576px){
-    header.masthead > div > div > p {
-        font-family: "Exton Free Trial", monospace;
-        font-size: 2rem;
-    }
-}
-
-/* Media Query for devices withi coarse pointers and no hover functionality */
-
-/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 
 @media (pointer: coarse) and (hover: none) {
     header {
@@ -224,17 +276,22 @@ section#about div.container {
 
 section.page-section#about {
     background-image: url("../images/why-chronofi-background-fix1.png");
+    background-color: rgba(0, 0, 255, 0.1);
+    /*opacity: 40%;*/
     background-size: cover;
 }
 
 section.page-section#about p#what-is {
     font-family: "Lato Black", sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 0.1em;
 }
 
 section.page-section#about p.why-chronofi {
     font-family: "Lato Black", sans-serif;
     font-size: 18px;
+    /*letter-spacing: 2em;*/
 }
 
 section.page-section#about p {
@@ -248,6 +305,7 @@ section.page-section#about iframe {
 
 section.page-section#ecosystem {
     background-image: url("../images/ecosystem-background.png");
+    background-color: rgba(0, 0, 255, 0.1);
     background-size: cover;
 }
 
@@ -260,6 +318,15 @@ section.page-section#ecosystem {
     }
 }
 
+.icon-why {
+    width: 15em;
+    max-width: 50%;
+    height: auto;
+}
+
+.text-why {
+    max-width: 50%;
+}
 
 section#features img.rotate {
     animation-duration: 10s;
@@ -377,6 +444,30 @@ figcaption {
 /*    bottom: 6%;*/
 /*}*/
 
+/* smaller, dark, rounded square */
+button.flickity-button.flickity-prev-next-button.previous{
+    width: 57px;
+    height: 57px;
+    border-radius: 5px;
+    background: #996f19;
+}
+
+button.flickity-button.flickity-prev-next-button.next{
+    width: 57px;
+    height: 57px;
+    border-radius: 5px;
+    background: #996f19;
+}
+
+button.flickity-button.flickity-prev-next-button:hover {
+    background: #ffbc33;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+    /*fill: #F7A008;*/
+    fill: #ffa200;
+}
+
 section#gameplay .flickity-prev-next-button {
     top: 85%;
     -webkit-transform: none;
@@ -396,17 +487,19 @@ section#gameplay .flickity-prev-next-button {
     /*display: none;*/
     /*background: rgba(0);*/
 }
+
 /* big previous & next buttons */
 .flickity-prev-next-button {
     width: 100px;
     height: 100px;
 }
+
 /* icon color */
 .flickity-button-icon {
     fill: transparent;
 }
 
-button.flickity-prev-next-button.previous{
+button.flickity-prev-next-button.previous {
     /*background-image: url("../images/arrow-left.svg");*/
 }
 
@@ -420,6 +513,7 @@ section#advisor div.advisor {
 
 section#faq {
     background-image: url("../images/faq-bg.png");
+    background-color: rgba(0, 0, 255, 0.1);
     background-size: cover;
 }
 
@@ -437,20 +531,6 @@ section#faq h2.faq-subtitle {
     font-family: "Voice Activated BB", sans-serif;
     font-size: 20px;
 }
-
-/*section#faq h2.faq-subtitle span:after {*/
-/*    content: '';*/
-/*    display: inline-block;*/
-/*    !*position: relative;*!*/
-/*    border-top: .3rem solid white;*/
-/*    width: 100%;*/
-/*    !*height: 4px;*!*/
-/*    !*background: white;*!*/
-/*    transform: translate(-1rem);*/
-/*    !*top: 100%;*!*/
-/*    !*left: 0;*!*/
-/*}*/
-
 
 section#faq p.faq-content {
     font-family: Montserrat, sans-serif;
@@ -539,5 +619,13 @@ footer div.coming-soon div#invest {
 .copyright p {
     font-family: Montserrat, sans-serif;
     color: white;
-    font-size: 20px;
+    font-size: 1.2rem;
+}
+
+a.icon:hover {
+    background-color: #FDA31E;
+}
+
+a.socmed-icon:hover {
+    transform: scale(1.1);
 }

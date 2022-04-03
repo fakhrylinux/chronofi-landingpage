@@ -18,57 +18,67 @@
 </head>
 <body id="home">
 <!--Navigation-->
-<nav class="navbar navbar-dark navbar-expand-lg navbar-custom fixed-top mb-5" id="navbar">
-    <div class="container-fluid px-xxl-5 d-flex justify-content-between">
-        <a class="navbar-brand ps-xxl-5" href="#">
-            <img src="assets/images/logo.png" alt="">
-        </a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="font-size: 2rem">
-<!--            <i class="bi bi-list"></i>-->
-            </span>
-        </button>
+<nav class="navbar navbar-dark navbar-expand-md navbar-custom fixed-top mb-5" id="navbar">
+    <!--    <div class="container-fluid px-xxl-5 d-flex justify-content-between">-->
+    <div class="container-fluid justify-content-center">
+        <div class="row w-100 justify-content-center justify-content-lg-between">
+            <div class="col-12 col-lg-3 text-center">
+                <a class="navbar-brand ps-xxl-5" href="#">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+            </div>
 
-        <div class="collapse navbar-collapse justify-content-end pe-xxl-5" id="navbarResponsive">
-            <ul class="navbar-nav my-2 my-lg-0 ">
-                <li class="nav-item d-inline-flex justify-content-end">
-                    <a class="nav-link text-warning fw-bold" href="#home">Home</a>
-                </li>
-                <li class="nav-item d-inline-flex justify-content-end">
-                    <a class="nav-link text-white d-inline-flex" href="#gameplay">Gameplay</a>
-                </li>
-                <li class="nav-item d-inline-flex justify-content-end">
-                    <a class="nav-link text-white d-inline-flex" href="#features">Features</a>
-                </li>
-                <li class="nav-item d-inline-flex justify-content-end">
-                    <a class="nav-link text-white d-inline-flex" href="#roadmap">Roadmap</a>
-                </li>
-                <li class="nav-item d-inline-flex justify-content-end">
-                    <a class="nav-link text-white d-inline-flex" href="assets/file/Onepage.pdf">Onepage</a>
-                </li>
-                <li class="nav-item d-inline-flex justify-content-end">
-                    <a class="nav-link text-white d-inline-flex" href="#team-carousel">Our Team</a>
-                </li>
-            </ul>
+            <div class="col-12 col-lg-6 text-center">
+                <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon" style="font-size: 2rem;">
+                <!--            <i class="bi bi-list"></i>-->
+                            </span>
+                </button>
+
+                <!--                <div class="collapse navbar-collapse justify-content-end pe-xxl-5" id="navbarResponsive" style="border: 1px yellowgreen solid">-->
+                <div class="collapse navbar-collapse justify-content-center pe-xxl-5" id="navbarResponsive">
+                    <ul class="navbar-nav my-2 my-lg-0">
+                        <li class="nav-item d-inline-flex justify-content-center">
+                            <a class="nav-link text-warning fw-bold" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center">
+                            <a class="nav-link d-inline-flex link-light" href="#gameplay">Gameplay</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center">
+                            <a class="nav-link d-inline-flex link-light" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center">
+                            <a class="nav-link d-inline-flex link-light" href="#roadmap">Roadmap</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center">
+                            <a class="nav-link d-inline-flex link-light" href="assets/file/Onepage.pdf">Onepage</a>
+                        </li>
+                        <li class="nav-item d-inline-flex justify-content-center">
+                            <a class="nav-link d-inline-flex link-light" href="#team-carousel">Our Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
 
 <!--Masthead-->
-<header class="masthead">
-    <div class="">
-        <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="assets/video/chronofi.mp4" type="video/mp4">
-        </video>
-    </div>
-    <div class="align-items-end bottom-0 position-absolute bottom-0 start-0 ms-5 ps-xxl-5 mb-5 pb-5">
-        <div class="mb-5">
+<header class="masthead py-0">
+    <!--    <div class="">-->
+    <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="assets/video/chronofi.mp4" type="video/mp4">
+    </video>
+    <!--    </div>-->
+    <!--    <div class="border align-items-end bottom-0 position-absolute bottom-0 start-0 ms-5 ps-xxl-5 mb-5 pb-5">-->
+    <div class="header-title align-items-end position-absolute">
+        <div class="mb-3 text-center text-lg-start">
             <p class="text-white lh-1">DIGITAL GAMING<br/>PLATFORM ON BLOCKCHAIN</p>
         </div>
-        <div>
-            <img src="assets/images/playnow-btn.png">
+        <div class="text-center text-lg-start">
+            <img id="playnow" src="assets/images/playnow-btn.png">
         </div>
     </div>
 </header>
@@ -77,15 +87,15 @@
 <section class="page-section" id="about">
     <div class="container about">
         <div class="text-center d-flex flex-column">
-            <div class="d-flex justify-content-center mt-2 button-section">
+            <div class="d-flex justify-content-center button-section">
                 <img class="mt-5 mb-5" src="assets/images/button-what-is-chronofi.png" alt="">
             </div>
-            <div class="row px-0">
+            <div class="row w-100 mx-auto mb-5">
                 <div class="col-12 col-lg-6 justify-content-center mx-auto">
                     <iframe
                             class="w-100 mx-auto" height="419px"
                             src="https://www.youtube.com/embed/Z7D4mRC84HQ?controls=0"
-                            title="YouTube video player"
+                            title="CHRONOFi Teaser"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>
 
@@ -93,14 +103,14 @@
                 </div>
                 <div class="d-flex align-items-center col-12 col-lg-6 align-middle">
 
-                    <p class="text-start text-white mt-2 align-middle" id="what-is">
-                        <span class="chronofitext">CHRONOFi</span> is the first 2D & 3D decentralized NFT
+                    <p class="text-center text-lg-start text-white mt-2 align-middle" id="what-is">
+                        <span class="chronofitext fw-bold">CHRONOFi</span> is the first 2D & 3D decentralized NFT
                         Play-to-Earn on POLYGON Network. We are a blockchain-based NFT adventure game with 2D
                         turn-based, 3D MMORPG Open World Game Play-to-Earn mechanics and Metaverse NFT
                         Marketplace, in which anyone can earn tokens through skilled gameplay and contributions
                         to the ecosystem. Players can engage in battle, collect items, and construct robots.
                         <br><br>
-                        Allowing <span class="chronofitext">CHRONOFi</span> community developers to create their
+                        Allowing <span class="chronofitext fw-bold">CHRONOFi</span> community developers to create their
                         own tools and experiences in the <span class="chronofitext">CHRONOFiverse</span>. Each
                         unique NFT Robots will hold its intrinsic value complimenting the rarity, which can be
                         traded in the game which will aggregate the floor price according to its attributes and
@@ -111,18 +121,18 @@
             </div>
 
             <!--Why Chronofi-->
-            <div class="text-center d-flex flex-column">
+            <div class="text-center d-flex flex-column my-5">
                 <div class="d-flex justify-content-center button-section">
                     <img class="mt-5 mb-5" src="assets/images/button-why.png"/>
                 </div>
 
                 <div class="row mx-auto">
                     <div class="col-lg-6 col-sm-12 mb-4">
-                        <div class="row">
-                            <div class="col-3 d-flex align-items-center">
+                        <div class="row row-cols-auto">
+                            <div class="col-4 float-start align-items-center my-auto icon-why">
                                 <img src="assets/images/why/a.png" alt="">
                             </div>
-                            <div class="col-9 d-flex align-items-center px-5">
+                            <div class="col-8 float-start my-auto mx-auto text-why">
 
                                 <p class="text-start text-white why-chronofi">
                                     We will have two kinds of games: <br/>
@@ -134,10 +144,10 @@
                     </div>
                     <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
-                            <div class="col-3 d-flex align-items-center">
+                            <div class="col-4 float-start align-items-center my-auto icon-why">
                                 <img src="assets/images/why/b.png" alt="">
                             </div>
-                            <div class="col-9 d-flex align-items-center px-5">
+                            <div class="col-8 float-start my-auto mx-auto text-why">
                                 <p class="text-start text-white why-chronofi">
                                     Innovative combination between Play-to-Earn and Metaverse built cleverly upon an
                                     engaging story and plot.
@@ -150,10 +160,10 @@
                 <div class="row mx-auto">
                     <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
-                            <div class="col-3 d-flex align-items-center">
+                            <div class="col-4 float-start align-items-center my-auto icon-why">
                                 <img src="assets/images/why/c.png">
                             </div>
-                            <div class="col-9 d-flex align-items-center px-5">
+                            <div class="col-8 float-start my-auto mx-auto text-why">
                                 <p class="text-start text-white why-chronofi">
                                     AI personalization tech allows users to upload their photos and create unique
                                     digital avatars.
@@ -164,10 +174,10 @@
                     </div>
                     <div class="col-lg-6 col-sm-12 mb-4">
                         <div class="row">
-                            <div class="col-3 d-flex align-items-center">
+                            <div class="col-4 float-start align-items-center my-auto icon-why">
                                 <img src="assets/images/why/d.png" alt="">
                             </div>
-                            <div class="col-9 d-flex align-items-center px-5">
+                            <div class="col-8 float-start my-auto mx-auto text-why">
                                 <p class="text-start text-white why-chronofi">
                                     There is the ability to engage with crossover characters from other universes such
                                     as Mecha or other
@@ -182,11 +192,11 @@
 </section>
 
 <!--Gameplay-->
-<section class="page-section py-5" id="gameplay">
+<section class="page-section pb-5" id="gameplay">
     <div class="container-fluid preloadSection">
         <div class="row justify-content-center text-center mx-auto">
-            <div class="px-0 pt-5 mb-5 col-lg-8 text-center justify-content-center button-section">
-                <img class="" src="assets/images/button-gameplay.png" alt="">
+            <div class="px-0 mb-5 col-lg-8 text-center justify-content-center button-section">
+                <img class="mt-5" src="assets/images/button-gameplay.png" alt="">
             </div>
         </div>
 
@@ -231,8 +241,8 @@
 <section class="page-section" id="ecosystem">
     <div class="container preloadSection text-center">
         <div class="text-center d-flex flex-column">
-            <div class="my-5 col-lg-8 text-center button-section">
-                <img class="" src="assets/images/button-ecosystem.png" alt="">
+            <div class="mb-5 col-lg-8 text-center button-section">
+                <img class="mt-5" src="assets/images/button-ecosystem.png" alt="">
             </div>
         </div>
         <div class="text-center deferredImageContainer w-100">
@@ -248,7 +258,7 @@
             </div>
         </div>
 
-        <div class="row justify-content-center mb-5">
+        <div class="row justify-content-center mb-5 mx-auto">
             <div class="col-lg-2 col-md-6 col-sm-6 text-center my-4">
                 <object class="img-fluid w-100 lazy" data="assets/images/svg/feature-nft-marketplace-spin.svg"
                         type="image/svg+xml"></object>
@@ -274,11 +284,11 @@
 </section>
 
 <!--Roadmap-->
-<section class="page-section py-5" id="roadmap">
+<section class="page-section" id="roadmap">
     <div class="container text-center">
         <div class="text-center d-flex flex-column">
-            <div class="pt-5 col-lg-8 text-center button-section">
-                <img class="" src="assets/images/button-roadmap.png" alt="">
+            <div class="col-lg-8 text-center button-section">
+                <img class="mt-5" src="assets/images/button-roadmap.png" alt="">
             </div>
         </div>
         <div class="text-center mt-5 deferredImageContainer">
@@ -290,10 +300,10 @@
 
 <!--Backer-->
 <section class="page-section" id="backer" style="background-color: #000f21">
-    <div class="container text-center py-5">
+    <div class="container text-center pb-5">
         <div class="text-center d-flex flex-column">
             <div class="col-lg-8 text-center button-section">
-                <img class="" src="assets/images/button-backer.png" alt="">
+                <img class="mt-5" src="assets/images/button-backer.png" alt="">
             </div>
         </div>
 
@@ -328,11 +338,11 @@
 </section>
 
 <!--Our Team Carousel-->
-<section class="page-section pt-5" id="team-carousel">
+<section class="page-section" id="team-carousel">
     <div class="container-fluid">
         <div class="row gx-4 gx-lg-5 justify-content-center mx-auto">
-            <div class="px-0 my-5 col-lg-8 text-center button-section justify-content-center">
-                <img class="" src="assets/images/button-ourteam.png">
+            <div class="px-0 mb-5 col-lg-8 text-center button-section justify-content-center">
+                <img class="mt-5" src="assets/images/button-ourteam.png">
             </div>
         </div>
 
@@ -345,7 +355,7 @@
                     <br>CEO & Founder
                 </p>
                 <div class="text-center mt-4">
-                    <a href="https://www.linkedin.com/in/vannn" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/vannn" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -373,7 +383,7 @@
                     <br>COO & Co-Founder
                 </p>
                 <div class="text-center mt-4">
-                    <a href="https://www.linkedin.com/in/alfanf/" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/alfanf/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -401,7 +411,7 @@
                     <br>CMO
                 </p>
                 <div class="text-center mt-4">
-                    <a href="https://www.linkedin.com/in/zummia/" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/zummia/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -429,7 +439,7 @@
                     <br>CPO
                 </p>
                 <div class="text-center mt-4">
-                    <a href="https://www.linkedin.com/in/fatma-misky-4388b3155/" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/fatma-misky-4388b3155/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -457,7 +467,7 @@
                     <br>2D / 3D DESIGN
                 </p>
                 <div class="text-center mt-4">
-                    <a href="https://www.linkedin.com/in/taufikkurnia23/" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/taufikkurnia23/" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -485,7 +495,7 @@
                     <br>2D / 3D DESIGN
                 </p>
                 <div class="text-center mt-4">
-                    <a href="#">
+                    <a class="icon" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -513,7 +523,7 @@
                     <br>UI / UX
                 </p>
                 <div class="text-center mt-4">
-                    <a href="#">
+                    <a class="icon" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -541,7 +551,7 @@
                     <br>GAME DESIGN
                 </p>
                 <div class="text-center mt-4">
-                    <a href="#">
+                    <a class="icon" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -569,7 +579,7 @@
                     <br>COMMUNITY
                 </p>
                 <div class="text-center mt-4">
-                    <a href="#">
+                    <a class="icon" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -597,7 +607,8 @@
                     <br>LEAD PROGRAMMER
                 </p>
                 <div class="text-center mt-4">
-                    <a href="https://www.linkedin.com/in/muhammad-fakhry-burhanuddin-28b8a6b4/" target="_blank">
+                    <a class="icon" href="https://www.linkedin.com/in/muhammad-fakhry-burhanuddin-28b8a6b4/"
+                       target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -638,7 +649,7 @@
                     <br>ICO ADVISOR
                 </p>
                 <div class="text-center mt-4">
-                    <a href="#">
+                    <a class="icon" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g transform="translate(-756.645 -404.943)">
                                 <path d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z"
@@ -824,7 +835,7 @@
 <!--Footer-->
 <footer class="footer mt-auto pb-0" id="footer">
     <div class="container-fluid py-5">
-        <div class="row">
+        <div class="row mx-auto">
             <div class="col-lg-4 col-md-12 pt-4">
 
                 <div class="d-flex flex-column align-items-center align-items-xxl-start">
@@ -844,43 +855,43 @@
             </div>
 
             <!--About Us-->
-            <div class="col-lg-4 col-md-12 d-flex justify-content-center  text-white text-center text-lg-start mt-lg-0 mt-md-2">
+            <div class="col-lg-4 col-md-12 d-flex justify-content-center text-center text-lg-start mt-lg-0 mt-md-2">
                 <ul class="nav d-inline-flex flex-column">
                     <li class="nav-item">
-                        <a class="nav-link text-white fw-bold" href="#" style="font-size: 20px">About Us</a>
+                        <a class="nav-link link-light fw-bold" href="#" style="font-size: 20px">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="assets/file/Whitepaper%20v.2.pdf" target="_blank"
+                        <a class="nav-link link-light" href="assets/file/Whitepaper%20v.2.pdf" target="_blank"
                            style="font-size: 20px">Whitepaper</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="mailto:hello@chronofi.io" style="font-size: 20px">
+                        <a class="nav-link link-light" href="mailto:hello@chronofi.io" style="font-size: 20px">
                             Contact Us
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="assets/file/Onepage.pdf" style="font-size: 20px">One
+                        <a class="nav-link link-light" href="assets/file/Onepage.pdf" style="font-size: 20px">One
                             Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="assets/file/CHRONOFi%20Deck.pdf" target="_blank"
+                        <a class="nav-link link-light" href="assets/file/CHRONOFi%20Deck.pdf" target="_blank"
                            style="font-size: 20px">Pitch Deck</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#" style="font-size: 20px">Documents</a>
+                        <a class="nav-link link-light" href="#" style="font-size: 20px">Documents</a>
                     </li>
 
                 </ul>
             </div>
 
             <!--Join Our Community-->
-            <div class="col-lg-4 col-md-12 text-center text-lg-start mt-lg-0 mt-md-2">
+            <div class="col-12 col-lg-4 text-center text-lg-start mt-lg-0 mt-md-2 mx-auto align-self-center">
                 <p class="fw-bold text-white mb-3 text-center text-lg-start" style="font-size: 20px">Join Our
                     Community</p>
-                <div class="d-flex flex-column justify-content-center">
+                <div class="d-flex flex-column justify-content-center mx-auto align-self-center">
                     <div class="row mb-3">
                         <div class="d-flex justify-content-center justify-content-lg-start">
-                            <a href="https://t.me/chronofi" class="mx-2" target="_blank">
+                            <a href="https://t.me/chronofi" class="mx-2 socmed-icon" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35.568" height="36.081"
                                      viewBox="0 0 35.568 36.081">
                                     <rect width="35.568" height="36.081" rx="10" fill="#f7a008"/>
@@ -888,7 +899,7 @@
                                           transform="translate(4.733 6.353)" fill="#fff"/>
                                 </svg>
                             </a>
-                            <a href="https://discord.io/CHRONOFi" class="mx-2" target="_blank">
+                            <a href="https://discord.io/CHRONOFi" class="mx-2 socmed-icon" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36.338" height="35.243"
                                      viewBox="0 0 36.338 35.243">
                                     <rect width="36.338" height="35.243" rx="10" fill="#f7a008"/>
@@ -896,7 +907,7 @@
                                           transform="translate(8.043 5.858)" fill="#fff"/>
                                 </svg>
                             </a>
-                            <a href="https://twitter.com/chronofi_" class="mx-2" target="_blank">
+                            <a href="https://twitter.com/chronofi_" class="mx-2 socmed-icon" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="35.388" height="35.452"
                                      viewBox="0 0 35.388 35.452">
                                     <rect width="35.388" height="35.452" rx="10" fill="#f7a008"/>
@@ -904,7 +915,7 @@
                                           transform="translate(3.607 6.353)" fill="#fff"/>
                                 </svg>
                             </a>
-                            <a href="https://medium.com/@chronofi" class="mx-2" target="_blank">
+                            <a href="https://medium.com/@chronofi" class="mx-2 socmed-icon" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36.243" height="35.243"
                                      viewBox="0 0 36.243 35.243">
                                     <rect width="36.243" height="35.243" rx="10" fill="#f7a008"/>
@@ -912,7 +923,7 @@
                                           transform="translate(6.77 5.858)" fill="#fff"/>
                                 </svg>
                             </a>
-                            <a href="https://www.youtube.com/c/CHRONOFi" class="mx-2" target="_blank">
+                            <a href="https://www.youtube.com/c/CHRONOFi" class="mx-2 socmed-icon" target="_blank">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="36.892" height="35.757"
                                      viewBox="0 0 36.892 35.757">
                                     <rect width="36.892" height="35.757" rx="10" fill="#f7a008"/>
@@ -924,7 +935,7 @@
                     </div>
 
                     <!--Coming Soon-->
-                    <div class="coming-soon row p-4 align-self-center">
+                    <div class="coming-soon row p-4 align-self-center mx-auto">
                         <div class="col-8 col-lg-12 mx-auto">
                             <p class="coming-soon-title text-start">COMING SOON</p>
                             <p class="coming-soon-content text-start">We'll be launching our project soon, so be sure to
