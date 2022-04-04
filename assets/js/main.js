@@ -1,4 +1,4 @@
-// window.addEventListener('DOMContentLoaded', event => {
+window.addEventListener('DOMContentLoaded', event => {
 //
 // // Activate Bootstrap scrollspy on the main nav element
 //   const mainNav = document.body.querySelector('#navbar')
@@ -8,6 +8,37 @@
 //       offset: 74,
 //     })
 //   }
+
+  // window.onscroll = function () {scrollFunction()}
+
+  // Navbar shrink function
+  const navbarShrink = function () {
+    const navbarCollapsible = document.body.querySelector('#navbar')
+    if (!navbarCollapsible) {
+      return
+    }
+    if (window.scrollY === 0) {
+      navbarCollapsible.classList.remove('navbar-shrink')
+    } else {
+      navbarCollapsible.classList.add('navbar-shrink')
+    }
+
+  }
+
+  // Shrink the navbar
+  navbarShrink()
+
+  // Shrink the navbar when page is scrolled
+  document.addEventListener('scroll', navbarShrink)
+
+  // Activate Bootstrap scrollspy on the main nav element
+  const mainNav = document.body.querySelector('#mainNav')
+  if (mainNav) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#mainNav',
+      offset: 74,
+    })
+  }
 
 
 // animate lazy loading image
@@ -21,4 +52,4 @@
     //   { opacity: 0, y:100, stagger: 0.5 }),
   })
 
-// })
+})
