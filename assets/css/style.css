@@ -9,7 +9,7 @@ html {
     height: 100%;
     width: 100%;
     /*scroll-padding-top: calc(4.5rem - 1px);*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 * {
@@ -47,6 +47,17 @@ img {
     height: auto;
 }
 
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.button-section {
+    width: 331px;
+    height: auto;
+    align-self: center;
+}
+
 nav {
     display: flex;
     flex-wrap: wrap;
@@ -56,6 +67,9 @@ nav {
     background-color: #002653;
 }
 
+/*.navbar {*/
+/*    transition: 1s;*/
+/*}*/
 
 .navbar-dark .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 163, 30)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -191,18 +205,6 @@ nav {
     }
 }
 
-
-.no-padding {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.button-section {
-    width: 331px;
-    height: auto;
-    align-self: center;
-}
-
 @media screen and (min-width: 992px) {
     header.masthead > div > div > p {
         font-family: "Exton Free Trial", monospace;
@@ -265,6 +267,8 @@ nav {
     }
 }
 
+
+
 header .overlay {
     position: absolute;
     top: 0;
@@ -282,17 +286,6 @@ header.masthead > div > div > p {
     /*font-family: "Exton Free Trial", monospace;*/
     /*font-size: 3.75rem;*/
     /*font-size: 4.5vw;*/
-}
-
-
-@media (pointer: coarse) and (hover: none) {
-    header {
-        /*background: url('../images/video.png') black no-repeat center center scroll;*/
-    }
-
-    header video {
-        /*display: none;*/
-    }
 }
 
 /*Full Width Video CSS End*/
