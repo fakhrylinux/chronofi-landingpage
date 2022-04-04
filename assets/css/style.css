@@ -127,6 +127,7 @@ nav {
     }
 }
 
+/*Medium display 576px - 767px*/
 @media screen and (min-width: 576px) {
     header.masthead > div > div > p {
         font-family: "Exton Free Trial", monospace;
@@ -177,12 +178,16 @@ nav {
     }
 
     section#faq span {
-        white-space: nowrap;
+        /*white-space: nowrap;*/
+    }
+
+    section#faq span.faq1 {
+        width: 100%;
     }
 
     section#faq div.white-ruler {
-        width: 100%;
-
+        /*width: 100%;*/
+        width: auto;
     }
 }
 
@@ -244,6 +249,19 @@ nav {
         -moz-transform: translateX(-50%) translateY(-50%);
         -webkit-transform: translateX(-50%) translateY(-50%);
         transform: translateX(-50%) translateY(-50%);
+    }
+
+    section#faq span {
+        white-space: nowrap;
+    }
+
+    section#faq span.faq1 {
+        width: auto;
+    }
+
+    section#faq div.white-ruler {
+        width: 100%;
+        /*width: auto;*/
     }
 }
 
@@ -564,7 +582,7 @@ section#faq div.faq-content {
     font-family: Montserrat, sans-serif;
 }
 
-section#faq  span:after{
+section#faq span:after {
 
 }
 
