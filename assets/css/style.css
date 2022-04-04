@@ -117,6 +117,14 @@ nav {
     header #playnow {
         width: 8em;
     }
+
+    section#faq span.faq1 {
+        width: 100%;
+    }
+
+    section#faq div.white-ruler {
+        width: 0;
+    }
 }
 
 @media screen and (min-width: 576px) {
@@ -167,6 +175,15 @@ nav {
     header #playnow {
         width: 16em;
     }
+
+    section#faq span {
+        white-space: nowrap;
+    }
+
+    section#faq div.white-ruler {
+        width: 100%;
+
+    }
 }
 
 
@@ -196,9 +213,13 @@ nav {
     }
 
     header.masthead .header-title {
-        bottom: 4rem;
+        /*bottom: 2rem;*/
         /*left: 1rem;*/
-        left: 4rem;
+        /*top: 40rem;*/
+        top: 55%;
+        /*left: 8rem;*/
+        left: 10%;
+        /*left: 0;*/
         right: 0;
         margin-left: auto;
         margin-right: auto;
@@ -447,14 +468,14 @@ figcaption {
 /*}*/
 
 /* smaller, dark, rounded square */
-button.flickity-button.flickity-prev-next-button.previous{
+button.flickity-button.flickity-prev-next-button.previous {
     width: 57px;
     height: 57px;
     border-radius: 5px;
     background: #996f19;
 }
 
-button.flickity-button.flickity-prev-next-button.next{
+button.flickity-button.flickity-prev-next-button.next {
     width: 57px;
     height: 57px;
     border-radius: 5px;
@@ -464,6 +485,7 @@ button.flickity-button.flickity-prev-next-button.next{
 button.flickity-button.flickity-prev-next-button:hover {
     background: #ffbc33;
 }
+
 /* arrow color */
 .flickity-prev-next-button .arrow {
     /*fill: #F7A008;*/
@@ -542,6 +564,9 @@ section#faq div.faq-content {
     font-family: Montserrat, sans-serif;
 }
 
+section#faq  span:after{
+
+}
 
 .accordion-button:not(.collapsed):after {
     background-image: url("../images/accordion-minus-btn.svg");
