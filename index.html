@@ -12,18 +12,14 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!--        <link rel="stylesheet" href="assets/css/bootstrap.css">-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!--        <link rel="stylesheet" href="assets/css/bootstrap-icons.css">-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <!--        <link rel="stylesheet" href="assets/css/flickity.css">-->
     <title>CHRONOFi</title>
 </head>
 <body id="home">
 <!--Navigation-->
 <nav class="navbar navbar-dark navbar-expand-md navbar-custom fixed-top mb-5 navbar-shrink" id="navbar">
-    <!--    <div class="container-fluid px-xxl-5 d-flex justify-content-between">-->
     <div class="container-fluid justify-content-center">
         <div class="row w-100 justify-content-center justify-content-lg-between">
             <div class="col-12 col-lg-3 text-center">
@@ -34,14 +30,16 @@
 
             <div class="col-12 col-lg-6 text-center">
                 <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                        data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                        aria-expanded="true"
                         aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon" style="font-size: 2rem;">
-                <!--            <i class="bi bi-list"></i>-->
-                            </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+                         viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                    </svg>
                 </button>
 
-                <!--                <div class="collapse navbar-collapse justify-content-end pe-xxl-5" id="navbarResponsive" style="border: 1px yellowgreen solid">-->
                 <div class="collapse navbar-collapse justify-content-center pe-xxl-5" id="navbarResponsive">
                     <ul class="navbar-nav my-2 my-lg-0">
                         <li class="nav-item d-inline-flex justify-content-center">
@@ -72,12 +70,12 @@
 <!--Masthead-->
 <header class="masthead py-0">
     <!--    <div class="">-->
-    <video class="" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+    <video class="position-absolute top-50 start-50 translate-middle min-vw-100 min-vh-100 w-auto h-auto"
+           playsinline="playsinline"
+           autoplay="autoplay" muted="muted" loop="loop">
         <source src="assets/video/chronofi.mp4" type="video/mp4">
     </video>
-    <!--    </div>-->
-    <!--    <div class="border align-items-end bottom-0 position-absolute bottom-0 start-0 ms-5 ps-xxl-5 mb-5 pb-5">-->
-    <div class="header-title align-items-end position-absolute">
+    <div class="header-title align-items-end position-absolute mx-auto start-0 end-0">
         <div class="mb-3 text-center text-lg-start">
             <p class="text-white lh-1">DIGITAL GAMING<br/>PLATFORM ON BLOCKCHAIN</p>
         </div>
@@ -299,7 +297,6 @@
         </div>
         <div class="text-center my-5 deferredImageContainer">
             <img class="lazy" src="assets/images/roadmap.png">
-            <!--            <object class="w-100" data="assets/images/svg/roadmap-svg.svg" type="image/svg+xml"></object>-->
         </div>
     </div>
 </section>
@@ -796,11 +793,12 @@
 <section id="smart-contract-address">
     <div class="container-fluid d-flex align-items-center text-center justify-content-center">
         <div class="d-flex">
-            <p>
-                Smart Contract Address: <a class="text-decoration-none link-light"
-                                           href="https://polygonscan.com/token/0x9950fea09f74e81b8c2a97c7036406433beaead1">
-                0x9950fea09f74e81b8c2a97c7036406433beaead1
-            </a>
+            <p class="smart-contract-address">
+                Smart Contract Address:
+                <a class="text-decoration-none link-light"
+                   href="https://polygonscan.com/token/0x9950fea09f74e81b8c2a97c7036406433beaead1">
+                    0x9950fea09f74e81b8c2a97c7036406433beaead1
+                </a>
             </p>
         </div>
     </div>
@@ -948,20 +946,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-<!--<script src="assets/js/bootstrap.bundle.js"></script>-->
 <!--GSAP-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-<!--<script src="assets/js/gsap.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
-<!--<script src="assets/js/ScrollTrigger.min.js"></script>-->
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!--<script src="assets/js/jquery-3.6.0.js"></script>-->
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<!--<script src="assets/js/flickity.pkgd.js"></script>-->
 <script src="assets/js/main.js"></script>
-
 
 </body>
 </html>

@@ -2,141 +2,91 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.cdnfonts.com/css/exton-free-trial');
 
-/*CSS Reset*/
+/* Variable */
+:root {
+    /* Color */
+    --background-color: #002653;
+    --brand-color: #FDA31E;
+
+    /* Font */
+    --body-font: Montserrat, sans-serif;
+    --second-font: "Lato Black", sans-serif;
+    --masthead-font: "Exton Free Trial", monospace;
+}
 
 html {
     box-sizing: border-box;
     font-size: 16px;
     height: 100%;
     width: 100%;
-    /*scroll-padding-top: calc(4.5rem - 1px);*/
-    /*overflow-x: hidden;*/
-}
-
-* {
-    max-width: 100%;
 }
 
 *, *:before, *:after {
     box-sizing: inherit;
+    max-width: 100%;
 }
 
 body {
     background: url("../images/background-693-1024.png");
     background-size: cover;
-    font-weight: normal;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5, h6, p, ol, ul {
-    margin: 0;
-    padding: 0;
-    font-weight: normal;
-}
-
-
-ol, ul {
-    list-style: none;
-}
-
-img {
-    /*width: 100vw;*/
-    max-width: 100%;
-    height: auto;
-}
-
-.no-padding {
-    padding-left: 0;
-    padding-right: 0;
 }
 
 .button-section {
-    width: 331px;
+    width: 20.6rem;
     height: auto;
     align-self: center;
 }
 
-nav {
-    display: flex;
-    flex-wrap: wrap;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-    /*background-color: #002653;*/
-    background-color: transparent;
-}
-
 #navbar.navbar-shrink {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #002653;
+    background-color: var(--background-color);
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253, 163, 30)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-    color: yellow;
-}
-
-.navbar-toggler {
-    /*border-color: rgb(255,102,203);*/
+.navbar-dark .navbar-toggler {
     border-color: transparent;
-    /*color: #FDA31E;*/
+    padding: 0;
+}
+
+.navbar-dark .navbar-toggler svg {
+    color: var(--brand-color);
+}
+
+.navbar-dark .navbar-toggler:focus {
+    box-shadow: none;
 }
 
 .nav-link {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--second-font);
     font-size: 1.5rem;
 }
 
 @media screen and (max-width: 575px) {
-    /*html, body {*/
-    /*    overflow-x: hidden;*/
-    /*}*/
-
     header.masthead {
         position: relative;
-        overflow: hidden;
         width: 100vw;
         max-width: 100%;
         height: 100vh;
     }
 
     header video {
-        /*object-fit: cover;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*bottom: 0;*/
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
         z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
     }
 
     header.masthead > div > div > p {
         font-family: "Exton Free Trial", monospace;
-        /*font-size: 4rem;*/
         font-size: 150%;
     }
 
     header.masthead .header-title {
         top: 22rem;
-        /*left: 1rem;*/
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     header #playnow {
         width: 8em;
+    }
+
+    .smart-contract-address {
+        font-size: .75rem;
     }
 
     section#faq span.faq1 {
@@ -168,38 +118,15 @@ nav {
     }
 
     header video {
-        /*object-fit: cover;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        /*bottom: 0;*/
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
         z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
     }
 
     header.masthead .header-title {
-        /*top: 22rem;*/
         top: 40%;
-        /*left: 1rem;*/
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     header #playnow {
         width: 16em;
-    }
-
-    section#faq span {
-        /*white-space: nowrap;*/
     }
 
     section#faq span.faq1 {
@@ -207,14 +134,13 @@ nav {
     }
 
     section#faq div.white-ruler {
-        /*width: 100%;*/
         width: auto;
     }
 }
 
 @media screen and (min-width: 992px) {
     header.masthead > div > div > p {
-        font-family: "Exton Free Trial", monospace;
+        font-family: var(--masthead-font);
         font-size: 5rem;
     }
 
@@ -227,13 +153,8 @@ nav {
     }
 
     header.masthead .header-title {
-        /*bottom: 2rem;*/
-        /*left: 1rem;*/
-        /*top: 40rem;*/
-        top: 55%;
-        /*left: 8rem;*/
-        left: 10%;
-        /*left: 0;*/
+        top: 55% !important;
+        left: 10% !important;
         right: 0;
         margin-left: auto;
         margin-right: auto;
@@ -244,20 +165,7 @@ nav {
     }
 
     header video {
-        /*object-fit: cover;*/
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        width: auto;
-        height: auto;
         z-index: 0;
-        -ms-transform: translateX(-50%) translateY(-50%);
-        -moz-transform: translateX(-50%) translateY(-50%);
-        -webkit-transform: translateX(-50%) translateY(-50%);
-        transform: translateX(-50%) translateY(-50%);
     }
 
     section#faq span {
@@ -270,45 +178,7 @@ nav {
 
     section#faq div.white-ruler {
         width: 100%;
-        /*width: auto;*/
     }
-}
-
-
-
-header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(8, 27, 11, 0.3);
-    z-index: 2;
-    /*opacity: 0.5;*/
-    /*z-index: 1;*/
-}
-
-
-header.masthead > div > div > p {
-    /*font-family: "Exton Free Trial", monospace;*/
-    /*font-size: 3.75rem;*/
-    /*font-size: 4.5vw;*/
-}
-
-/*Full Width Video CSS End*/
-
-header.masthead h1, header.masthead .h1 {
-    /*font-size: 2.25rem;*/
-}
-
-
-/*section.page-section {*/
-/*    padding-top: 90px;*/
-/*}*/
-
-section.page-section {
-    /*width: 100vw;*/
-    /*max-width: 100%;*/
 }
 
 section#about div.container {
@@ -318,26 +188,24 @@ section#about div.container {
 section.page-section#about {
     background-image: url("../images/why-chronofi-background-fix1.png");
     background-color: rgba(0, 0, 255, 0.1);
-    /*opacity: 40%;*/
     background-size: cover;
 }
 
 section.page-section#about p#what-is {
-    font-family: "Lato Black", sans-serif;
+    font-family: var(--second-font);
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 0.1em;
 }
 
 section.page-section#about p.why-chronofi {
-    font-family: "Lato Black", sans-serif;
-    font-size: 18px;
-    /*letter-spacing: 2em;*/
+    font-family: var(--second-font);
+    font-size: 1.125rem;
 }
 
 section.page-section#about p {
-    font-family: "Lato Black", sans-serif;
-    font-size: 20px;
+    font-family: var(--second-font);
+    font-size: 1.25rem;
 }
 
 section.page-section#about iframe {
@@ -350,15 +218,6 @@ section.page-section#ecosystem {
     background-size: cover;
 }
 
-@keyframes rotation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
 .icon-why {
     width: 15em;
     max-width: 50%;
@@ -369,123 +228,17 @@ section.page-section#ecosystem {
     max-width: 50%;
 }
 
-section#features img.rotate {
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-name: rotation;
-    transition: 1s;
-}
-
-section#features img.icon-feature {
-    top: 46px;
-}
-
-section#features div.inner {
-    top: 0;
-}
-
-section#features div.inner img {
-    top: -50%;
-}
-
-section#features img.text-box {
-    /*width: 315px;*/
-    /*height: 325px;*/
-    /*object-fit: none;*/
-}
-
-section#features div img.spin {
-    animation: spin 0.75s infinite linear;
-}
-
-.spin::before,
-.spin::after {
-    left: -2px;
-    top: -2px;
-    display: none;
-    position: absolute;
-    content: '';
-    width: inherit;
-    height: inherit;
-    border: inherit;
-    border-radius: inherit;
-}
-
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-.spinner,
-.spinner::before,
-.spinner::after {
-    display: inline-block;
-    border-color: transparent;
-    animation-duration: 1.2s;
-}
-
-.spinner::before {
-    transform: rotate(120deg);
-}
-
-.spinner::after {
-    transform: rotate(240deg);
-}
-
-
-#teaser {
-    width: 1040px;
-    height: auto;
-}
-
 .chronofitext {
-    color: #FDA31E;
+    color: var(--brand-color);
 }
-
-figure {
-    position: relative
-}
-
-figcaption {
-    position: absolute;
-    /*width: 200px;*/
-    line-height: 150px;
-    text-align: center;
-    left: 150px;
-    top: -25px;
-    /*text-shadow: 0 0 1px white;*/
-    font-size: 24px;
-    /*font-weight:bold;*/
-}
-
-.container-image {
-    border: solid red 2px;
-    width: 1090px;
-    height: auto;
-    align-self: center;
-    place-content: center;
-}
-
-.full-width-image {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    margin-left: -50vw;
-}
-
-.full-width-image img {
-    width: 100%;
-}
-
-/*.flickity-prev-next-button {*/
-/*    bottom: 6%;*/
-/*}*/
 
 /* smaller, dark, rounded square */
+section#gameplay .flickity-prev-next-button {
+    top: 85%;
+    -webkit-transform: none;
+    transform: none;
+}
+
 button.flickity-button.flickity-prev-next-button.previous {
     width: 57px;
     height: 57px;
@@ -506,43 +259,12 @@ button.flickity-button.flickity-prev-next-button:hover {
 
 /* arrow color */
 .flickity-prev-next-button .arrow {
-    /*fill: #F7A008;*/
-    fill: #ffa200;
-}
-
-section#gameplay .flickity-prev-next-button {
-    top: 85%;
-    -webkit-transform: none;
-    transform: none;
-}
-
-/*.flickity-prev-next-button.previous {*/
-/*    left: auto;*/
-/*    right: 60px;*/
-/*}*/
-
-/*.flickity-prev-next-button.next {*/
-/*    right: 10px;*/
-/*}*/
-
-.flickity-button {
-    /*display: none;*/
-    /*background: rgba(0);*/
-}
-
-/* big previous & next buttons */
-.flickity-prev-next-button {
-    width: 100px;
-    height: 100px;
+    fill: var(--brand-color);
 }
 
 /* icon color */
 .flickity-button-icon {
     fill: transparent;
-}
-
-button.flickity-prev-next-button.previous {
-    /*background-image: url("../images/arrow-left.svg");*/
 }
 
 section#team-carousel div.carousel-cell {
@@ -649,26 +371,22 @@ footer div.coming-soon p.coming-soon-content {
 
 footer div.coming-soon div#invest {
     background-color: #001834;
-    font-family: "Voice Activated BB", sans-serif;
     font-size: 12px;
-    color: white;
 }
 
 .copyright {
-    /*width: 100vw;*/
-    /*max-width: 100%;*/
     background-color: black;
     height: 71px;
 }
 
 .copyright p {
-    font-family: Montserrat, sans-serif;
+    font-family: var(--body-font);
     color: white;
     font-size: 0.8rem;
 }
 
 a.icon:hover {
-    background-color: #FDA31E;
+    background-color: var(--brand-color);
 }
 
 a.socmed-icon:hover {
